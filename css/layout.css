@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('basic.css');
+
+/* 
+  Author: PAnkti PAtel
+  ID: W0498904
+  Date: 14th December 2023
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .profile-body{
+    background-color: #fff;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  header{
+    padding-top: 3%;;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+  }
+  
+  .image {
+    width: 100%;
+  }
+  
+  .profile {
+    max-width: 90%;
+    border-radius: 50%;
+
+  }
+  
+  .text {
+    text-align: justify;
+    padding-right: 4%;
+    font-size: 18px;
+    font-family: 'Red Hat Mono', monospace;
+  }
+
+  .name{
+    font-size: 35px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Rubik Mono One', monospace;
+    color: #e76f51;
+  }
+  
+  .highlight{
+    color: #e76f51
+  }
+
+  #quote {
+    font-family: 'Rouge Script', cursive;
+    color: #bc4749;
+    font-size: 34px;
+  }
+
+  menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-item {
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    padding-bottom: 3%;
+    
+    /* Add margin for space between items */
+    margin-right: 15px;
+}
+
+.menu-item a {
+    font-family: 'Red Hat Mono', monospace;
+    text-decoration: none;
+    font-weight: 500;
+    color: #457b9d;
+}
+
+.menu-item.active {
+    margin: 2px;
+    background-color: #a8dadc;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu-item.active a {
+    color: #1d3557;
+}
+
+.menu-item:hover {
+    background-color: #a8dadc;
+    transform: scale(1.05);
+}
+
+/* Bootstrap styling */
+.navbar-nav {
+    display: flex;
+}
+
+.nav-link {
+    color: #457b9d;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    background-color: #a8dadc;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-item.active .nav-link {
+    color: #1d3557;
+}
+
+.nav-item:hover {
+    background-color: #a8dadc;
+}

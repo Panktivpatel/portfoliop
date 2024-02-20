@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Author: Pankti Patel
+        Date: 14th December 2023
+        Student ID: W0498904
+
+        Description: This is the Project page for my portfolio.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankti Patel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/title-logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="profile-body">
+        <header class="jumbotron bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/profile-image.png" class="img-fluid profile" alt="Your Image">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="name">Pankti Patel</h1>
+                            <p class="description">
+                                <ul>
+                                    <li>Student <span class="highlight">@NSCC</span></li>
+                                    <li>Currently Studying - <span class="highlight">Full Stack Application Development</span></li>
+                                    <li>Worked as Jr. Software Developer <span class="highlight">@Docsvault</span></li>
+                                    <li>Completed Software Developer Internship <span class="highlight">@Webmyne Systems Pvt. Ltd.</span></li>
+                                </ul>
+                            </p>
+                            <p id="quote"></p>
+                        </div>
+                    </div>
+                </div>
+        </header>
+            
+            <!-- Menu Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <div class="menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <div class="nav-item" style="margin-right: 15px;"><a class="nav-link" href="home.html">Home</a></div>
+                        <div class="nav-item" style="margin-right: 15px;"><a class="nav-link" href="education.html">Education</a></div>
+                        <div class="nav-item" style="margin-right: 15px;"><a class="nav-link" href="certificates.html">Certificates</a></div>
+                        <div class="nav-item active" style="margin-right: 15px;"><a class="nav-link" href="projects.html">Projects</a></div>
+                        <div class="nav-item" style="margin-right: 15px;"><a class="nav-link" href="contact.html">Contact</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h2 class="heading">Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Hospital Management System</h3>
+                                <p class="card-text">Skill Set: React.js, .NET and SQL Workbench</p>
+                                <p class="card-text data" style="height: 200px; overflow: auto;">I developed a Hospital Management System using .NET for the back-end, SQL Workbench for database management, and React.js for the user-friendly front-end. The system streamlines patient management, appointment scheduling, and staff coordination. It includes features for billing, electronic health records, and real-time updates. SQL Workbench ensures efficient database management, scalability, and performance. This comprehensive solution positively impacts hospital operations by enhancing efficiency, patient care, and financial management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Time Scheduling System</h3>
+                                <p class="card-text">Skill Set: React.js, JAVA and SQL Workbench</p>
+                                <p class="card-text data" style="height: 200px; overflow: auto;">I've developed a Time Scheduling System that combines Java for the backend, SQL for the database, and React.js for the frontend. This system assists users in managing their time efficiently by providing personalized scheduling suggestions. Users input their tasks, deadlines, and priorities, and the Java backend processes this data to generate customized schedules in real-time. The SQL manages user profiles and scheduling data. This Time Scheduling System streamlines time management, providing tailored scheduling recommendations to boost productivity and work-life balance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Registration and Login basic Page</h3>
+                                <p class="card-text">Skill Set: React.js</p>
+                                <a href="https://loginuthentication.onrender.com/">
+                                    <iframe src="https://loginuthentication.onrender.com/" title="Website Name" width="100%" height="300"></iframe>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Login Authentication using API database</h3>
+                                <p class="card-text">Skill Set: React.js and MongoDB API</p>
+                                <iframe src="https://startling-platypus-f23126.netlify.app/" title="Website Name" width="100%" height="300"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <h2 class="mb-4">My GitHub Repositories</h2>
+                <h5>List of projects that are yet to be deployed</h5>
+        
+                <div class="card-columns">
+                    <div class="row" id="repositories-list">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer>
+            Created By: Pankti Patel
+            <br>Email: panktivimalp@gmail<br>
+            <p>Took Reference for displaying multiple qoutes: <a href="https://stackoverflow.com/questions/72234741/how-can-i-display-an-random-quote-from-an-javascript-array-in-html">Stackoverflow</a></p>
+            <p>Throughout the course: <a href="https://www.w3schools.com/cssref/css_animatable.php">W3Schools</a></p>
+            <p>For Bootstrap: <a href="https://getbootstrap.com/docs/5.3/components/accordion/">Bootstrap Components</a></p>
+            <p>Took Reference from: 
+                <a href="https://www.youtube.com/watch?v=QNvFRrMvsDU">Youtube</a>
+            </p>
+        </footer>
+        <script src="js/index.js"></script>
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/qoutes.js"></script>
+    </div>
+</body>

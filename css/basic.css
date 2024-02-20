@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Martin+Mono&display=swap'); */
+
+
+/* 
+  Author: PAnkti PAtel
+  ID: W0498904
+  Date: 14th December 2023
+*/
+
+/* About Me Section  */
+.about-me, .experience, .nontech, .educationsection, .skills, .social, .contact-form, .coursera, .udemy, .projects {
+    padding: 3%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+.heading{
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 30px;
+    color: #e76f51;
+}
+
+.aboutme-description{
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Experience Section */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Adjust column widths as needed */
+    grid-gap: 20px; /* Space between cards */
+}
+
+.card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 100px;
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+.logo .webmyne, .logo .exposys {
+    padding-left: 75%;
+}
+
+.logo .technocolabs {
+    padding-left: 40%;
+}
+
+.date {
+    font-family: 'Martin Mono', monospace;
+    font-weight: 600;
+    color: #457b9d;
+}
+
+.jobdescription{
+    font-family: 'Fragment Mono', monospace;
+    color: #1d2d44;
+}
+
+.position{
+    font-family: 'Fragment Mono', monospace;
+    color: #e76f51;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Non - technical Experience */
+.nontech {
+    color: #1d2d44;
+}
+
+/* Tab Styles */
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tab-label {
+    border: 2px solid #fca311;
+    font-family: 'Martin Mono', monospace;
+    font-weight: 600;
+    display: block;
+    background: #f9f9f9;
+    padding: 14px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.tab-label:hover {
+    background: #fca311;
+}
+
+.tab-content {
+    font-family: 'Fragment Mono', monospace;
+    text-align: justify;
+    display: none;
+    padding-top: 10px;
+    width: 100%;
+}
+
+/* Tab Behavior */
+input[type="radio"]:checked + .tab-label + .tab-content {
+    display: block;
+    width: 50%;
+}
+
+/* Half-width for the content */
+input[type="radio"]:checked + .tab-label + .tab-content {
+    width: 100%;
+}
+
+
+
+/* Education Page */
+/* Style for the education section */
+.educationsection {
+    background-color: #f9f9f9;
+    font-family: 'Martin Mono', monospace;
+    padding: 4%;
+}
+
+/* Style for individual education items */
+.education-item {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.education-icon {
+    flex: 1;
+    text-align: center;
+}
+
+.education-icon i {
+    font-size: 40px;
+    color: #14213d; /* Icon color */
+}
+
+.education-details {
+    flex: 6;
+}
+
+.education-details h3 {
+    margin-top: 0;
+}
+
+.education-details p {
+    margin: 0;
+    color: #555;
+}
+
+/* Style for the skills section */
+/* Style for subsection headings */
+.skills{
+    font-family: 'Martin Mono', monospace;
+}
+
+.technical-skills {
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.skills h3 {
+    color: #457b9d;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+/* Style for the skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed */
+}
+
+.skills-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Style for individual skills */
+.skill {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for skill ratings */
+.skill-rating {
+    background: #f0f0f0;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.skill p {
+    color: #78290f;
+}
+
+.progress {
+    background: #fca311;
+    font-size: 12px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    color: black;
+}
+
+/* Certificates */
+/* Coursera */
+.coursera-grid {
+    font-family: 'Martin Mono', monospace;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.certificate {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.certi-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* projects */
+.card{
+    margin-bottom: 3%;
+}
+.projects h3{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projects p .data{
+    overflow: auto;
+    font-size: 16px;
+    height: 300px;
+}
+
+.cards-column .row .card{
+    margin:15px;
+}
+
+/* Contact Me Page */
+.social p {
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form {
+    font-family: 'Martin Mono', monospace;
+}
+
+.social-links{
+    text-decoration: none;
+    font-family: 'Martin Mono', monospace;
+    font-size: 20px;
+    color: #457b9d;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #457b9d
+}
+
+input {
+    border: none;
+    width: 90%;
+    padding: 4px;
+    border-bottom:#e76f51 2px solid;
+}
+
+textarea {
+    border: none;
+    width: 90%;
+    padding: 4px;
+    border-bottom:#e76f51 2px solid;
+}
+
+button {
+    background-color: #fca311;
+    color: black;
+    border: none;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.grid-item {
+    grid-column: span 1; 
+}
+
+.submit-button {
+    grid-column: span 2; /* The submit button spans two columns */
+}
+
+/* Footer */
+footer{
+    font-family: 'Martin Mono', monospace;
+    font-size: 17px;
+    margin-top: 20px;
+    color: white;
+    background-color: #e76f51;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.whatIdo {
+    overflow: auto;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 360px) {
+    .whatIdo {
+        max-height: 150px; /* Set a maximum height for smaller screens */
+    }
+}
